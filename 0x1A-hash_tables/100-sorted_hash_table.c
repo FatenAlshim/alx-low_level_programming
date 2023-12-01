@@ -164,7 +164,6 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	}
 	return (NULL);
 }
-
 /**
  * shash_table_print - prints a sorted hash table
  * @ht: hash table to print
@@ -190,7 +189,6 @@ void shash_table_print(const shash_table_t *ht)
 	}
 	printf("}\n");
 }
-
 /**
  * shash_table_print_rev - prints a sorted hash table in reverse
  * @ht: hash table to print
@@ -216,7 +214,6 @@ void shash_table_print_rev(const shash_table_t *ht)
 	}
 	printf("}\n");
 }
-
 /**
  * shash_table_delete - deletes a sorted hash table
  * @ht: hash table to delete
@@ -227,7 +224,6 @@ void shash_table_delete(shash_table_t *ht)
 {
 	unsigned long int i;
 	shash_node_t *next;
-
 	if (ht == NULL || ht->array == NULL || ht->size == 0)
 		return;
 	for (i = 0; i < ht->size; i++)
